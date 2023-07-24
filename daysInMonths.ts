@@ -22,12 +22,7 @@ let monthNum : number = 1;
 let isLeapYear : boolean = true;
 let numOfDaysInMonth : number = 30;
 
-const prompt = require('prompt-sync')({sigint: true});
-
-monthNum = prompt('Enter a month number: ');
-console.log(Number(monthNum) + " is " + monthNum);
-
-//monthNum = 1;
+monthNum = 1;
 isLeapYear = false;
 
 if (monthNum == 4 || monthNum == 6 || monthNum == 9 || monthNum == 11 ){
