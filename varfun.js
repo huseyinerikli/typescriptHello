@@ -1,0 +1,13 @@
+var numr = 4;
+var denom = 8;
+var fraction = numr / denom;
+console.log("fractioon is " + fraction);
+var label;
+label = "Hello there";
+console.log("My label is " + label);
+label = "now not Hello anymore";
+console.log("My label is " + label);
+var skyIsBlue = true;
+console.log("My sky is blue? " + skyIsBlue);
+var pi = 3.14159;
+console.log("Pi! " + pi);
