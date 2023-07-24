@@ -19,10 +19,7 @@ and 29 on leap year.
 var monthNum = 1;
 var isLeapYear = true;
 var numOfDaysInMonth = 30;
-var prompt = require('prompt-sync')({ sigint: true });
-monthNum = prompt('Enter a month number: ');
-console.log(Number(monthNum) + " is " + monthNum);
-//monthNum = 1;
+monthNum = 1;
 isLeapYear = false;
 if (monthNum == 4 || monthNum == 6 || monthNum == 9 || monthNum == 11) {
     numOfDaysInMonth = 30;
