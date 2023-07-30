@@ -1,5 +1,4 @@
-/*
-30 days hath Apr, June, Sep, Nov
+/* 30 days hath Apr, June, Sep, Nov
 All the rest hath 31
 Except Feb 28 in fine,
 and 29 on leap year.
@@ -16,24 +15,27 @@ and 29 on leap year.
 // let month10 : string = "October";
 // let month11 : string = "November";
 // let month12 : string = "December";
-var monthNum = 1;
+var monthNum = 12;
 var isLeapYear = true;
-var numOfDaysInMonth = 30;
-monthNum = 1;
-isLeapYear = false;
-if (monthNum == 4 || monthNum == 6 || monthNum == 9 || monthNum == 11) {
+var numOfDaysInMonth;
+monthNum = 254;
+isLeapYear = true;
+if (monthNum === 4 || monthNum === 6 || monthNum === 9 || monthNum === 11) {
     numOfDaysInMonth = 30;
 }
-else if ((monthNum == 2) && (isLeapYear == false)) {
+else if ((monthNum === 2) && (!isLeapYear)) {
     console.log("Month #" + monthNum + " is not a leap year and ");
     numOfDaysInMonth = 28;
 }
-else if ((monthNum == 2) && (isLeapYear == true)) {
+else if ((monthNum === 2) && (isLeapYear)) {
     console.log("Month #" + monthNum + " is a leap year and ");
     numOfDaysInMonth = 29;
 }
-else {
+else if (monthNum < 13) {
     numOfDaysInMonth = 31;
+}
+else {
+    console.log("Make sure month number is between 1 and 12");
 }
 console.log("Month #" + monthNum + " hath " + numOfDaysInMonth + " days!");
 // if (monthNum == 4 || monthNum == 6 || monthNum == 9 || monthNum == 11 ){
